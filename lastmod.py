@@ -1,5 +1,3 @@
-# This is a pattern I use often to cache web resources I scrape
-
 from datetime import datetime, timezone
 import email.utils
 from http.client import HTTPResponse
@@ -55,7 +53,7 @@ def urlopen(
     """
     Wrapper for urllib.request.urlopen(...)
     :param cache_path: path to filename for cached file including basename
-    :returns: {http.client.HTTPResponse,urllib.error.HTTPError}, {payload,None}
+    :return: {http.client.HTTPResponse,urllib.error.HTTPError}, {payload,None}
         payload - HTTPResponse.read() if 200
     """
     if isinstance(url, urllib.request.Request):
