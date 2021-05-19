@@ -1,0 +1,5 @@
+.eggs
+config.ini
+*.egg-info
+__pycache__
+*.db
